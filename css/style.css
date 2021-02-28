@@ -1065,7 +1065,7 @@ footer .info .copy p {
     grid-row: 1/2;
     max-height: 300px;
     width: 100%;
-    background: url(../img/_article1.jpeg);
+    background: url(../img/article1_small.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1079,7 +1079,7 @@ footer .info .copy p {
     grid-row: 1/2;
     max-height: 300px;
     width: 100%;
-    background: url(../img/_article2.jpeg);
+    background: url(../img/article2_small.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
