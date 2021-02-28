@@ -27,7 +27,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/*----------header styles-----------*/
+/*---------------------------------------------------------------------
+                        Header Section
+-----------------------------------------------------------------------*/
 header {
   height: 90vh;
   background: url(../img/carousel1.jpg);
@@ -137,7 +139,9 @@ header p strong {
   text-shadow: 0 1px 1px #000;
 }
 
-/*---------article 1 styles---------*/
+/*---------------------------------------------------------------------
+                        Article 1 Section
+-----------------------------------------------------------------------*/
 .Scope1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +248,9 @@ header p strong {
   transition: height 0.2s linear, width 0.2s linear 0.2s;
 }
 
-/*---------article 2 styles---------*/
+/*---------------------------------------------------------------------
+                        Article 2 Section
+-----------------------------------------------------------------------*/
 .Scope2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,7 +352,9 @@ header p strong {
   transition: height 0.2s linear, width 0.2s linear 0.2s;
 }
 
-/*---------Footer Styles------------*/
+/*---------------------------------------------------------------------
+                        Footer Section
+-----------------------------------------------------------------------*/
 footer {
   font-size: 0.9rem;
   color: #9c9999;
@@ -440,8 +448,8 @@ footer .social li {
 
 footer .social li .mediaIcon {
   opacity: 0.7;
-  width: 28px;
-  height: 28px;
+  width: 29px;
+  height: 29px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -506,7 +514,7 @@ footer .info .copy p {
 }
 
 /*---------------------------------------------------------------------
-                            About Section
+                     2. ABOUT PAGE SECTION
 -----------------------------------------------------------------------*/
 .aboutHeader {
   height: 80vh;
@@ -711,7 +719,7 @@ footer .info .copy p {
 }
 
 /*---------------------------------------------------------------------
-                            Projects Section
+                      3. PROJECT PAGE SECTION
 -----------------------------------------------------------------------*/
 .projectsHeader {
   height: 80vh;
@@ -745,38 +753,51 @@ footer .info .copy p {
   background-position: center center;
 }
 
-.grid_lock .grid_project .wrap {
+.grid_lock .grid_project .grid_content {
   text-align: center;
   padding: 30px 10px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
-.grid_lock .grid_project .wrap h2 {
+.grid_lock .grid_project .grid_content h2 {
   font-size: 1.3rem;
   font-weight: 900;
   color: #000;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
-.grid_lock .grid_project .wrap p {
+.grid_lock .grid_project .grid_content p {
   font-weight: 300;
   font-size: 1rem;
   color: #9c9999;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
-.grid_lock .grid_project .wrap:hover {
-  background: #000;
+.grid_lock .grid_project .grid_content:hover {
+  background-color: #000;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
   cursor: pointer;
 }
 
-.grid_lock .grid_project .wrap:hover h2 {
+.grid_lock .grid_project .grid_content:hover h2 {
   color: #fff;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
-.grid_lock .grid_project .wrap:hover p {
+.grid_lock .grid_project .grid_content:hover p {
   color: #ccc;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 
 /*---------------------------------------------------------------------
-                            Contact Section
+                      4. CONTACT PAGE SECTION
 -----------------------------------------------------------------------*/
 .contactHeader {
   height: 80vh;
@@ -1007,9 +1028,9 @@ footer .info .copy p {
   .Scope2 .projects {
     padding: 70px 40px 40px;
   }
-  /*-------------------------------
-                about
-    --------------------------------*/
+  /*---------------------------------------------------------------------
+                        ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
   .profile .profile-section {
     padding: 70px 40px 40px;
   }
@@ -1157,9 +1178,9 @@ footer .info .copy p {
   footer .info .copy p {
     text-align: center;
   }
-  /*-------------------------------
-                about
-    --------------------------------*/
+  /*---------------------------------------------------------------------
+                     2. ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
   .profile .profile-image {
     height: 400px;
     -webkit-box-flex: 1;
@@ -1205,9 +1226,9 @@ footer .info .copy p {
             flex: 1 0 100%;
     padding: 60px 30px 30px;
   }
-  /*-------------------------------
-                project
-    --------------------------------*/
+  /*---------------------------------------------------------------------
+                      4. CONTACT PAGE SECTION
+    -----------------------------------------------------------------------*/
   .contact-box .map {
     height: auto;
     min-height: 100%;
@@ -1279,9 +1300,9 @@ footer .info .copy p {
   footer .social {
     top: 40px;
   }
-  /*-------------------------------
-                about
-    --------------------------------*/
+  /*---------------------------------------------------------------------
+                     2. ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
   .aboutHeader {
     background-position: right center;
   }
@@ -1303,9 +1324,9 @@ footer .info .copy p {
   .why_to_choose .why_choose_section ul li {
     font-size: 0.9rem;
   }
-  /*-------------------------------
-                project
-    --------------------------------*/
+  /*---------------------------------------------------------------------
+                      4. CONTACT PAGE SECTION
+    -----------------------------------------------------------------------*/
   .social_class .insta {
     height: auto;
     min-height: 100%;

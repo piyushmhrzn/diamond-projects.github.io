@@ -25,7 +25,9 @@ html,body {
     scroll-behavior: smooth;
 }
 
-/*----------header styles-----------*/
+/*---------------------------------------------------------------------
+                        Header Section
+-----------------------------------------------------------------------*/
 header{
     height: 90vh;
     background: url(../img/carousel1.jpg);
@@ -108,7 +110,9 @@ header{
     }
 }
 
-/*---------article 1 styles---------*/
+/*---------------------------------------------------------------------
+                        Article 1 Section
+-----------------------------------------------------------------------*/
 .Scope1{
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +168,9 @@ header{
     } 
 }
 
-/*---------article 2 styles---------*/
+/*---------------------------------------------------------------------
+                        Article 2 Section
+-----------------------------------------------------------------------*/
 .Scope2{
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +221,9 @@ header{
     }
 }
 
-/*---------Footer Styles------------*/
+/*---------------------------------------------------------------------
+                        Footer Section
+-----------------------------------------------------------------------*/
 footer{
     font-size: $font-size-small;
     color: $font-color-lightGray;
@@ -278,8 +286,8 @@ footer{
 
             .mediaIcon{
                 opacity: 0.7;
-                width: 28px;
-                height: 28px;
+                width: 29px;
+                height: 29px;
                 transition: all 0.3s ease;
 
                 &:hover{
@@ -340,7 +348,7 @@ footer{
 }
 
 /*---------------------------------------------------------------------
-                            About Section
+                     2. ABOUT PAGE SECTION
 -----------------------------------------------------------------------*/
 .aboutHeader{
     height: 80vh;
@@ -473,7 +481,7 @@ footer{
 
 
 /*---------------------------------------------------------------------
-                            Projects Section
+                      3. PROJECT PAGE SECTION
 -----------------------------------------------------------------------*/
 .projectsHeader{
     height: 80vh;
@@ -503,30 +511,38 @@ footer{
             }
         }
 
-        .wrap{
+        .grid_content{
             text-align: center;
             padding: 30px 10px;
-
+            background-color: $font-color-white;
+            transition: background-color 0.5s ease;
+            
             h2{
                 font-size: $font-size-reg;
                 font-weight: $font-weight-bold;
                 color: $font-color-black;
+                transition: color 0.5s ease;
             }
 
             p{
                 font-weight: $font-weight-light;
                 font-size: $font-size-secondary;
-                color: $font-color-lightGray; 
+                color: $font-color-lightGray;
+                transition: color 0.5s ease; 
             }
 
             &:hover{ 
-                background: $font-color-black;
+                background-color: $font-color-black;
+                transition: background-color 0.5s ease;
                 cursor: pointer;
+
                 h2{
                     color: $font-color-white;
+                    transition: color 0.5s ease;
                 }
                 p{
                     color: $font-color-gray;
+                    transition: color 0.5s ease;
                 }
             }
         }
@@ -534,7 +550,7 @@ footer{
 }
 
 /*---------------------------------------------------------------------
-                            Contact Section
+                      4. CONTACT PAGE SECTION
 -----------------------------------------------------------------------*/
 .contactHeader{
     height: 80vh;
@@ -722,9 +738,9 @@ footer{
         }
     }
 
-    /*-------------------------------
-                about
-    --------------------------------*/
+    /*---------------------------------------------------------------------
+                        ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
 
     .profile{
         .profile-section{
@@ -873,9 +889,9 @@ footer{
         }
     }
 
-    /*-------------------------------
-                about
-    --------------------------------*/
+    /*---------------------------------------------------------------------
+                     2. ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
 
     .profile{
         .profile-image{
@@ -910,9 +926,9 @@ footer{
         }
     }  
 
-    /*-------------------------------
-                project
-    --------------------------------*/
+    /*---------------------------------------------------------------------
+                      4. CONTACT PAGE SECTION
+    -----------------------------------------------------------------------*/
     .contact-box{
         .map{
             @include growContent;
@@ -996,9 +1012,9 @@ footer{
         }
     }
 
-    /*-------------------------------
-                about
-    --------------------------------*/
+    /*---------------------------------------------------------------------
+                     2. ABOUT PAGE SECTION
+    -----------------------------------------------------------------------*/
     .aboutHeader{
         background-position: right center;
         .scroll-button{
@@ -1040,9 +1056,9 @@ footer{
         }
     }
 
-    /*-------------------------------
-                project
-    --------------------------------*/
+    /*---------------------------------------------------------------------
+                      4. CONTACT PAGE SECTION
+    -----------------------------------------------------------------------*/
     .social_class{
         .insta{
             @include growContent;
