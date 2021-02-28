@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Lynda PM</title>
+    <title>Diamond Projects</title>
 
     <!-- icon link -->
-    <link rel="icon" href="img/logo_icon.png" type = "image/x-icon">
+    <link rel="icon" href="img/_favicon.png" type = "image/x-icon">   
 </head>
+
 <body>
-    <header class="header">
-        <img src="img/logo.png" alt="logo">
-        <nav id="mainNav">
-            <ul>
-                <li><a href="index.html" title="home">Home</a></li>
-                <li><a href="index.html" title="about">About</a></li>
-                <li><a href="index.html" title="Projects">Projects</a></li>
-                <li><a href="index.html" title="contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="mainHead" class="mainHeader">
+        <div class="navbar">
+            <a href="index.html"><img src="img/_headerLogo.png" class="logo" alt="logo"></a> 
+            <nav id="mainNav">
+                <ul class="list-group">
+                    <li><a href="index.html" class="list-items active" title="home">Home.</a></li>
+                    <li><a href="about.html" class="list-items" title="about">About.</a></li>
+                    <li><a href="projects.html" class="list-items" title="Projects">Projects.</a></li>
+                    <li><a href="contact.html" class="list-items" title="contact">Contact.</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>If where you work matters, choosing who helps you build it, matters more.</h1>
-        <div class="img"></div>
+        <p><strong>Project</strong> - AMP Capital - Bond One, 20 Windmill Street.</p>
     </header>
+    
     <article>
         <section class="Scope1">
             <div class="img">
             </div>
             <div class="about">
-                <h2>About Scope Projects</h2>
+                <h2>About Our Projects.</h2>
                 <p>For over 18 years, we’ve delivered a diverse range of quality construction projects across
                      Sydney, Melbourne, Brisbane and Canberra.
                 </p>
@@ -45,6 +46,10 @@
                     From make goods, to multi-floor construction projects, nothing is out of scope for our
                      expert team.
                 </p>
+                <p>&nbsp;</p>
+                <p>
+                    <a class="btn" href="#">More about us</a>
+                </p>
             </div>
             <div class="img">
             </div>
@@ -53,7 +58,7 @@
             <div class="img">
             </div>
             <div class="projects">
-                <h2>Our Projects</h2>
+                <h2>Our Projects.</h2>
                 <p>
                     We’ve delivered over 1,000 quality projects, from foyers to full floor fit-outs, 
                     boardrooms to breakouts, and everything in between.
@@ -65,43 +70,60 @@
                 <p>
                     View our broad range of commercial property here:
                 </p>
-                <button type="button" class="button" value="Input Button" target="_blank">Click Here</button>
+                <p>&nbsp;</p>
+                <p>
+                    <a class="btn" href="#">Learn More</a>
+                </p>
             </div>
         </section>
     </article> 
+    
     <footer id="pageFooter">
-        <img src="img/logo.png" alt="logo">
-        <nav id="footerNav">
-            <ul>
-                <li><a href="index.html" title="home">Home</a></li>
-                <li><a href="index.html" title="about">About</a></li>
-                <li><a href="index.html" title="Projects">Projects</a></li>
-                <li><a href="index.html" title="contact">Contact</a></li>
-            </ul>
-        </nav>
-      
-        <a href="https://www.instagram.com/" title="instagram" target="_blank">
-            <img src="img/instagram.png" class="mediaIcon" alt="instagram" >
-        </a>
-        <a href="https://twitter.com/MaharjanPiyush" title="twitter" target="_blank">
-            <img src="img/twitter.png" class="mediaIcon" alt="twitter">
-        </a>
-        <a href="https://github.com/piyushmhrzn" title="github" target="_blank">
-            <img src="img/github.png" class="mediaIcon" alt="github">
-        </a>
-        <div>
-            <div class="info">
-                <dl>
-                    <dt>phone.</dt>
-                    <dd>(02) 9417 0011</dd>
-                    <dt>email.</dt>
-                    <dd><a href="https://www.youtube.com/" target="_blank">pmaharjanrocks@gmail.com</a></dd>
-                    <dt>address.</dt>
-                    <dd>"Kirtipur" Business Park Unit 10. 28 Barcoo St Roseville NSW 2069</dd>
-                </dl>
-            </div>
+        <div class="menu-wrap">
+            <div>
+                <a href="index.html">
+                    <img src="img/_footerLogo.png" alt="logo" class="footerLogo">
+                </a>
+            </div>            
+            <nav id="footerNav">
+                <ul class="list-group">
+                    <li><a href="index.html" class="list-items active" title="home">Home.</a></li>
+                    <li><a href="about.html" class="list-items" title="about">About.</a></li>
+                    <li><a href="projects.html" class="list-items">Projects.</a></li>
+                    <li><a href="contact.html" class="list-items">Contact.</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <ul class="social">
+            <li>
+                <a href="https://www.instagram.com/" title="instagram" target="_blank">
+                    <img src="img/_instagram.png" class="mediaIcon" alt="instagram" >
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/MaharjanPiyush" title="twitter" target="_blank">
+                    <img src="img/_twitter.png" class="mediaIcon" alt="twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/piyushmhrzn" title="github" target="_blank">
+                    <img src="img/_github.png" class="mediaIcon" alt="github">
+                </a>
+            </li>
+        </ul>
+           
+        <div class="info">
+            <dl>
+                <dt>phone.</dt>
+                <dd>(02) 9417 0011</dd>
+                <dt>email.</dt>
+                <dd><a href="mailto:pmaharjanrocks@gmail.com" target="_blank">pmaharjanrocks@gmail.com</a></dd>
+                <dt>address.</dt>
+                <dd>"Kirtipur" Business Park Unit 10. 28 Barcoo St Roseville NSW 2069</dd>
+            </dl>
             <div class="copy">
-                <p>&copy; 2021 Copyright Personal Project</p>
+                <p>&copy; 2021 Copyright Personal Projects.</p>
                 <p>Website Design by PsYch0</p>
             </div>
         </div>

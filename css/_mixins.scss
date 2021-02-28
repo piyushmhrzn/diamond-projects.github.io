@@ -1,0 +1,132 @@
+/*--------Hyperlinks 'a' tags--------*/
+@mixin mainNavbar{
+	color: $font-color-white;
+	padding: 0.5em 1em; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $font-size-primary;
+    font-weight: $font-weight-bold; 
+    text-shadow: 0 1px 1px #000;
+}
+
+@mixin footNavbar{
+    color: $font-color-black;
+	padding: 0.5em 1em; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold; 
+}
+
+@mixin borderBottom($width){
+    content: '';
+    display: block;
+    width: $width;
+    height: 2px;
+    background: $font-color-red;
+    transition: width .3s;
+}
+
+
+/*--------Buttons--------*/
+@mixin buttons{
+    color: $font-color-red;
+	padding: 0.8em 2em; 
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: $font-size-secondary;
+    font-weight: $font-weight-light; 
+    position: relative;
+    cursor: pointer;
+}
+
+@mixin button-before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-right: none !important;
+    border-bottom: none !important;
+    border: 1px solid $font-color-red;
+    box-sizing: border-box;
+    transition: height 0.2s linear,
+                width 0.2s linear 0.2s;
+}
+
+@mixin button-after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    border-left: none !important;
+    border-top: none !important;
+    border: 1px solid $font-color-red;
+    box-sizing: border-box;
+    transition: height 0.2s linear,
+                width 0.2s linear 0.2s;
+}
+
+@mixin button-hover{
+    height: 100%;
+    width: 100%;
+    transition: height 0.2s linear,
+                width 0.2s linear 0.2s;
+}
+
+/*--------Heading--------*/
+@mixin heading{
+    font-weight: $font-weight-bold;
+    font-size: $font-size-primary;
+    color: $font-color-light;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing:.05em;
+    margin-bottom: 30px;
+}
+
+/*--------Paragraphs--------*/
+@mixin paragraphs{
+    text-align: center;
+    line-height: 1.8em;
+    font-weight: $font-weight-light;
+    font-size: $font-size-secondary;
+    color: $font-color-lightGray;
+    letter-spacing: .02em;
+    margin-bottom: 30px;
+}
+
+/*-------List Items ---------*/
+@mixin unordered_list{
+    font-weight: $font-weight-light;
+    font-size: $font-size-secondary;
+    margin: 0 0 30px;
+    padding-left: 20px;
+}
+
+@mixin list{
+    display: list-item;
+    padding: 2px 0;
+    line-height: 1.5;
+    color: $font-color-lightGray;
+    font-weight: $font-weight-light;
+    font-size: $font-size-secondary
+}
+
+/*-----------Flex Grow ------------*/
+@mixin growContent{
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto; 
+    flex: 1 0 100%;
+}
+
+
