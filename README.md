@@ -1,2 +1,4 @@
 # Scope-Projects-Replica
-Replica of Scope Projects using HTML and CSS
+Replica of Scope Projects using Sass.
+
+Link: https://scopeprojects.com.au/
