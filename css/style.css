@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /*--------Hyperlinks 'a' tags--------*/
+/*-----Navbar bottom border animation -----*/
 /*--------Buttons--------*/
 /*--------Heading--------*/
 /*--------Paragraphs--------*/
@@ -48,7 +49,7 @@ header .navbar {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 2em 4em 0;
+  padding: 2em 0 0 4em;
 }
 
 header .navbar .logo {
@@ -1250,13 +1251,89 @@ footer .info .copy p {
 @media only screen and (max-width: 767px) {
   header .navbar {
     padding-left: 6%;
+    position: relative;
   }
   header .navbar .logo {
     width: 4em;
     height: 4em;
   }
-  header .navbar nav {
-    display: none;
+  header .navbar nav .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 3%;
+    top: 2em;
+    z-index: 200;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .navbar nav .hamburger .line {
+    width: 20px;
+    height: 1px;
+    background: #000;
+    margin: 2px auto;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  header .navbar nav .hamburger .active1 {
+    -webkit-transform: translateY(5px) rotate(-45deg);
+            transform: translateY(5px) rotate(-45deg);
+  }
+  header .navbar nav .hamburger .active2 {
+    opacity: 0;
+  }
+  header .navbar nav .hamburger .active3 {
+    -webkit-transform: translateY(-5px) rotate(45deg);
+            transform: translateY(-5px) rotate(45deg);
+  }
+  header .navbar nav .burgerBG {
+    background: #757477;
+  }
+  header .navbar nav .list-group {
+    position: fixed;
+    background: #000;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: -webkit-transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+    transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 100;
+  }
+  header .navbar nav .list-group li {
+    padding-top: 10px;
+  }
+  header .navbar nav .list-group li:first-child {
+    padding-top: 100px;
+  }
+  header .navbar nav .list-group li a {
+    font-size: 0.9rem;
+  }
+  header .navbar nav .open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   header h1 {
     font-size: 1.3rem;
