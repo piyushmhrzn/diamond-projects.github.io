@@ -7,9 +7,42 @@
 /*-------List Items ---------*/
 /*-----------Flex Grow ------------*/
 /*limited reset*/
-html, body, div, section, article, aside, header, hgroup, footer, nav,
-h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong,
-img, ol, ul, li, dl, dt, dd, figure, canvas, video, th, td, tr {
+html,
+body,
+div,
+section,
+article,
+aside,
+header,
+hgroup,
+footer,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+time,
+span,
+em,
+strong,
+img,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+figure,
+canvas,
+video,
+th,
+td,
+tr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -17,10 +50,11 @@ img, ol, ul, li, dl, dt, dd, figure, canvas, video, th, td, tr {
 }
 
 /*Global Styles*/
-html, body {
+html,
+body {
   width: 100%;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   position: relative;
   color: #fff;
@@ -36,7 +70,7 @@ header {
   background: url(../img/carousel1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 0px;
   position: relative;
 }
 
@@ -95,8 +129,8 @@ header .navbar nav ul li .list-items::after {
 
 header .navbar nav ul li .list-items:hover::after {
   width: 50%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 header .navbar nav ul li .active::after {
@@ -264,7 +298,6 @@ header p strong {
   background: url(../img/article3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
   width: 66.6%;
   height: 700px;
@@ -359,7 +392,7 @@ header p strong {
 footer {
   font-size: 0.9rem;
   color: #9c9999;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   border-top: 1px solid #ccc;
   padding: 50px 0;
   position: relative;
@@ -420,8 +453,8 @@ footer .menu-wrap nav ul li .list-items::after {
 
 footer .menu-wrap nav ul li .list-items:hover::after {
   width: 50%;
-  -webkit-transition: width .3s;
-  transition: width .3s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 footer .menu-wrap nav ul li .active::after {
@@ -522,7 +555,7 @@ footer .info .copy p {
   background: url(../img/carousel2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-y: 0px;
   background-attachment: fixed;
 }
 
@@ -635,7 +668,6 @@ footer .info .copy p {
   background: url(../img/about_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
   width: 66.6%;
   height: 1550px;
@@ -727,7 +759,7 @@ footer .info .copy p {
   background: url(../img/carousel3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-y: 0px;
   background-attachment: fixed;
 }
 
@@ -805,7 +837,7 @@ footer .info .copy p {
   background: url(../img/carousel4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position-y: 0px;
   background-attachment: fixed;
 }
 
@@ -1283,8 +1315,8 @@ footer .info .copy p {
     height: 1px;
     background: #000;
     margin: 2px auto;
-    -webkit-transition: .2s;
-    transition: .2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   header .navbar nav .hamburger .active1 {
     -webkit-transform: translateY(5px) rotate(-45deg);
@@ -1356,7 +1388,9 @@ footer .info .copy p {
   .Scope1 .about {
     padding: 60px 30px 30px;
   }
-  .Scope1 .about h2, .Scope1 .about p, .Scope1 .about a {
+  .Scope1 .about h2,
+  .Scope1 .about p,
+  .Scope1 .about a {
     font-size: 0.9rem;
   }
   .Scope2 .img {
@@ -1365,7 +1399,9 @@ footer .info .copy p {
   .Scope2 .projects {
     padding: 60px 30px 30px;
   }
-  .Scope2 .projects h2, .Scope2 .projects p, .Scope2 .projects a {
+  .Scope2 .projects h2,
+  .Scope2 .projects p,
+  .Scope2 .projects a {
     font-size: 0.9rem;
   }
   footer {
